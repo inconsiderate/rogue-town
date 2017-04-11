@@ -23,7 +23,7 @@ function Update() {
 	timer += Time.deltaTime;
 
 	if (playerHealth.currentHealth <= 0) {
-		anim.SetTrigger("PlayerDead");
+		anim.SetTrigger("Die");
 	}
 
 	if (Input.GetButtonDown("SwingSword") && timer >= timeBetweenAttacks) {
